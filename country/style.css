@@ -140,11 +140,11 @@ body {
     background-color: var(--bg-dark);
 }
 
-@media only screen and (max-width:568px) {
+@media only screen and (max-width:992px) {
     .container {
-        width: 100%;
+        width: min(100%, 960px);
         margin: 0 auto;
-        padding: 0 16px;
+        padding: 0 10px;
     }
 
     .header-title {
@@ -157,34 +157,80 @@ body {
         line-height: 16px;
     }
 
-    .detail-btn {
-        margin: 40px 0 64px;
-    }
-
     .detail-content {
-        grid-template-columns: 1fr;
-        column-gap: 0;
+        column-gap: 42px;
     }
 
     .detail-content img {
-        margin-bottom: 44px;
+        width: 100%;
+        border-radius: 5px;
     }
 
     .country-info {
-        flex-direction: column;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 35px;
     }
 
-    .country-list {
-        margin-bottom: 32px;
-    }
-
-    .border-country {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 60px;
+    .detail-title {
+        font-size: 28px;
+        line-height: 38px;
     }
 
     .border-country span {
-        margin-bottom: 16px;
+        font-size: 12px;
+        line-height: 18px;
     }
-}
+
+    .border-list li {
+        padding: 5px 20px;
+    }
+
+    @media only screen and (max-width:568px) {
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        .header-title {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .dark-btn {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .detail-btn {
+            margin: 40px 0 64px;
+        }
+
+        .detail-content {
+            grid-template-columns: 1fr;
+            column-gap: 0;
+        }
+
+        .detail-content img {
+            margin-bottom: 44px;
+        }
+
+        .country-info {
+            flex-direction: column;
+        }
+
+        .country-list {
+            margin-bottom: 32px;
+        }
+
+        .border-country {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 60px;
+        }
+
+        .border-country span {
+            margin-bottom: 16px;
+        }
+    }

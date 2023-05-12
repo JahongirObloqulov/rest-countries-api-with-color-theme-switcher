@@ -147,7 +147,44 @@ body {
     margin-bottom: 8px;
 }
 
-@media only screen and (max-width:568px) {
+@media only screen and (max-width:992px) {
+    .container {
+        width: min(100%, 960px);
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .header-title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .dark-btn {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .country {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .country-img {
+        width: 100%;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 40px
+    }
+
+    #search-input {
+        width: 100%;
+        padding: 14px 74px;
+    }
+}
+
+@media only screen and (max-width:552px) {
     .container {
         width: 100%;
         margin: 0 auto;
