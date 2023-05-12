@@ -164,11 +164,10 @@ body {
     .detail-content {
         grid-template-columns: 1fr;
         column-gap: 0;
-place-content:center;
+        place-content: center;
     }
 
     .detail-content img {
-        width: 85%;
         margin-bottom: 44px;
     }
 
