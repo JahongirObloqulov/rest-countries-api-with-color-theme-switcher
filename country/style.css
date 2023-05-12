@@ -164,7 +164,6 @@ body {
     .detail-content {
         grid-template-columns: 1fr;
         column-gap: 0;
-        place-content: center;
     }
 
     .detail-content img {
